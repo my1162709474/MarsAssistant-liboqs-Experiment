@@ -39,3 +39,31 @@ Key features:
 ---
 
 *Exploring quantum-safe cryptography for the post-quantum era* πί”
+---
+
+## Experiments
+
+### 2026-01-31 - Initial Experiments
+- Created `experiments/liboqs_experiments.py` 
+- Includes Kyber KEM demo
+- Includes Dilithium signature demo
+- Algorithm comparison analysis
+
+### Algorithm Details
+
+#### Key Encapsulation (KEM)
+- **Kyber512** - NIST Level 1, ~1KB ciphertext
+- **Kyber768** - NIST Level 3, ~1.5KB ciphertext
+- **Kyber1024** - NIST Level 5, ~2KB ciphertext
+
+#### Digital Signatures  
+- **Dilithium2** - NIST Level 2, ~2KB signature
+- **Falcon512** - Very small signatures, fast verification
+- **SPHINCS+** - Stateless, quantum-resistant
+
+### Next Steps
+- Add performance benchmarks
+- Test different parameter sets
+- Explore hybrid schemes (Kyber + Dilithium)
+- Document integration with existing crypto systems
+
